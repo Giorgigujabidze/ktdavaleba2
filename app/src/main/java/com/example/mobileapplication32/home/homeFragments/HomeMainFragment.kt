@@ -18,6 +18,7 @@ class HomeMainFragment : Fragment() {
     private lateinit var storyAdapter: RvStoryAdapter
     private lateinit var postAdapter: RvPostsAdapter
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

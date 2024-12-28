@@ -4,21 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/home_main_container"
     tools:context=".home.homeFragments.HomeMainFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcViewStories"
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/rcViewStories"
+tools:listitem="@layout/item_story"
+tools:itemCount="1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"/>
 
-        tools:listitem="@layout/item_story"
-        tools:itemCount="1"
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/rcViewPosts"
+tools:listitem="@layout/item_post"
+android:layout_width="match_parent"
+android:layout_height="match_parent"/>
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcViewPosts"
-        tools:listitem="@layout/item_post"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-</LinearLayout>
+    </LinearLayout>
